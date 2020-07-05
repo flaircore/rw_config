@@ -1,0 +1,16 @@
+
+rw_config.r_test:
+  path: '/rwconfig/tests/page'
+  defaults:
+    _controller: '\Drupal\rw_config\Controller\ConController::showCats'
+    _title: 'Rw Config Test Page'
+  requirements:
+    _permission: 'access content'
+
+rw_config.config_form:
+  path: '/rw_config/config_settings'
+  defaults:
+    _form: '\Drupal\rw_config\Form\RwConfigSettingsForm'
+    _title: 'Rw Config Test Page'
+  requirements:
+    _permission: 'access content' # should be better permission

@@ -1,0 +1,18 @@
+<h1> App Name: {{ data['app_title'] }}</h1>
+<hr/>
+{% for key, item in data['items'] %}
+  <div style="width: 300px">
+    <hr/>
+    <h1> Picture id: {{ item['id'] }}</h1>
+    {% if data['show_pictures'] %}
+
+      Show Picture:
+      <img src={{ item['url'] }} alt={{ item['url'] }}>
+    {% else %}
+      <h4> Picture display set to off!!!</h4>
+    {% endif %}
+  </div>
+
+
+{% endfor %}
+

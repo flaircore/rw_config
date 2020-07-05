@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function rw_config_theme($existing, $type, $theme, $path) {
+
+  return [
+    'rw_config_listing' => [
+      'render element' => 'children',
+      'template' => 'rw-config-listing',
+      'variables' => [
+        'data' => FALSE
+      ]
+    ]
+  ];
+}

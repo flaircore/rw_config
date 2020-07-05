@@ -1,0 +1,6 @@
+# see https://www.drupal.org/docs/drupal-apis/configuration-api/configuration-api-overview
+name: 'Read Write Config'
+type: module
+description: 'Example on how to write and read to drupal config'
+core: 8.x
+package: 'Dev Examples'
