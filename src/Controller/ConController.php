@@ -1,6 +1,5 @@
 <?php
-
-
+// ConController.php Start ------------------------------------------------
 namespace Drupal\rw_config\Controller;
 
 
@@ -9,7 +8,6 @@ use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Controller\ControllerBase;
 use GuzzleHttp\Client;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Symfony\Component\HttpFoundation\Response;
 
 class ConController extends ControllerBase {
 
@@ -53,16 +51,9 @@ class ConController extends ControllerBase {
 
     $items = Json::decode($data->getBody()->getContents());
 
-    #dump($config->get('api_key'));
-    #dump($config->get('app_title'));
-    #dump($config->get('show_pictures'));
-    #dump($items);
-
-
-
     return [
-      '#theme' => 'rw_config_listing',
-      '#data' => [
+      '#theme' => 'rw_config_listing', # remember template definition in rw_config.module
+      '#data' => [ # data to the template file
         'app_title' => $config->get('app_title'),
         'items' => $items,
         'show_pictures' => $config->get('show_pictures'),
@@ -72,3 +63,5 @@ class ConController extends ControllerBase {
   }
 
 }
+
+// ConController.php End ------------------------------------------------

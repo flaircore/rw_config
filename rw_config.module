@@ -8,7 +8,7 @@ function rw_config_theme($existing, $type, $theme, $path) {
   return [
     'rw_config_listing' => [
       'render element' => 'children',
-      'template' => 'rw-config-listing',
+      'template' => 'rw-config-listing', #name of the template file +.html.twig
       'variables' => [
         'data' => FALSE
       ]

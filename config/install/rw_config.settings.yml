@@ -1,3 +1,5 @@
+# ---- Start of rw_config.settings.yml file --------------
+
 # Contains the default values on install and can be
 # overridden in our config settings form, accessible
 # on route `<yoursite.com>/rw_config/config_settings`
@@ -5,3 +7,6 @@
 api_key: 'Test default api_key on install'
 app_title: 'Test default app title on install'
 show_pictures: false
+
+
+# ---- End of rw_config.settings.yml file --------------
